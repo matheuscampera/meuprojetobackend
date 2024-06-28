@@ -1,0 +1,21 @@
+extends layouts/layout.pug
+
+block content
+  section#contact
+    h2 Entre em Contato
+    p Entre em contato conosco para mais informações:
+    form.contact-form(action="/contact" method="post")
+      .form-group
+        label(for="name") Nome:
+        input(type="text" id="name" name="name" required placeholder="Seu nome completo")
+      .form-group
+        label(for="email") Email:
+        input(type="email" id="email" name="email" required placeholder="seuemail@exemplo.com")
+      .form-group
+        label(for="phone") Telefone:
+        input(type="tel" id="phone" name="phone" required placeholder="(XX) XXXXX-XXXX")
+      .form-group
+        label(for="message") Mensagem:
+        textarea(id="message" name="message" required placeholder="Sua mensagem aqui")
+      .form-group
+        button(type="submit") Enviar

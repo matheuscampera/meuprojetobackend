@@ -1,0 +1,9 @@
+doctype html
+html
+  head
+    title Error Page
+  body
+    h1 Error Occurred
+    h2= message
+    if error
+      pre= error.stack

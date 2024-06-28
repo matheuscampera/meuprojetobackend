@@ -1,0 +1,136 @@
+/* Base styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #f4f4f4;  /* Cor de fundo cinza claro */
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;  /* Centraliza o conteúdo dentro do header */
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: #333; /* Cor dos links em cinza escuro para melhor contraste */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header nav ul li a img.logo {
+  width: 150px;
+  height: auto;
+}
+
+main {
+  padding: 40px;
+  background: #fff;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #000;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+h1, h2 {
+  font-weight: normal;
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+}
+
+contact-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+}

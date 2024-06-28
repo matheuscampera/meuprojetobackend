@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title #{title} - Meu Site Profissional
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/css/styles.css")
+    script(src="/js/scripts.js")
+  body
+    header
+      nav
+        ul
+          li
+            a(href="/")
+              img.logo(src="/images/Logo-Unilavras-Oficial_2019-1.png" alt="Logo Unilavras")
+          li: a(href="/") Início
+          li: a(href="/about") Sobre
+          li: a(href="/services") Serviços
+          li: a(href="/contact") Contato
+    main
+      block content
+    footer
+      p &copy; 2024 Meu Site Profissional
